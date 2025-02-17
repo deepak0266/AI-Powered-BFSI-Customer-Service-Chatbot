@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered BFSI Customer Service Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="blob"></div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo gradient-text">BFSI AI Assistant</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>AI-Powered <span class="gradient-text">BFSI Assistant</span> at Your Service</h1>
+                    <p>Get instant solutions to all your banking, financial services, and insurance queries. Ask
+                        anything, anytime!</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=500&h=400&fit=crop"
+                        alt="AI Banking Assistant" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="gradient-text">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/fluency/96/000000/24-hours-support.png" alt="24/7 Support Icon"
+                        class="feature-icon">
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock assistance for all your BFSI needs.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/instant-support.png" alt="Instant Responses Icon"
+                        class="feature-icon">
+                    <h3>Instant Responses</h3>
+                    <p>Get real-time answers to your queries.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/language.png" alt="Multi-Language Icon"
+                        class="feature-icon">
+                    <h3>Multi-Language</h3>
+                    <p>Supports multiple languages for global users.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/security-checked.png" alt="Secure & Reliable Icon"
+                        class="feature-icon">
+                    <h3>Secure & Reliable</h3>
+                    <p>Your data is safe with us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools" id="tools">
+        <div class="container">
+            <h2 class="gradient-text">Useful Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="https://img.icons8.com/color/96/000000/calculator--v1.png" alt="Interest Calculator Icon"
+                        class="tool-icon">
+                    <h3>Interest Calculator</h3>
+                    <p>Calculate simple and compound interest.</p>
+                    <button onclick="openInterestCalculator()">Open Calculator</button>
+                </div>
+                <div class="tool-card">
+                    <img src="https://img.icons8.com/color/96/000000/loan.png" alt="Loan EMI Calculator Icon"
+                        class="tool-icon">
+                    <h3>Loan EMI Calculator</h3>
+                    <p>Calculate your monthly EMI for loans.</p>
+                    <button onclick="openEMICalculator()">Open Calculator</button>
+                </div>
+                <div class="tool-card">
+                    <img src="https://img.icons8.com/color/96/000000/tax.png" alt="Tax Calculator Icon"
+                        class="tool-icon">
+                    <h3>Tax Calculator</h3>
+                    <p>Calculate your income tax easily.</p>
+                    <button onclick="openTaxCalculator()">Open Calculator</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fragment Box -->
+    <div class="fragment-box" id="fragmentBox">
+        <div class="fragment-header">
+            <h3>Calculator</h3>
+            <button onclick="closeFragmentBox()">×</button>
+        </div>
+        <div class="fragment-content" id="fragmentContent">
+            <p>Use any of the above tools to get started.</p>
+        </div>
+    </div>
+
+
+
+    <div class="chatbot-widget">
+        <button class="chatbot-button" onclick="toggleChat()">💬</button>
+        <div class="chatbot-interface">
+            <div class="chatbot-header">
+                <h3>BFSI Assistant</h3>
+            </div>
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="message bot">
+                    Hello! I'm your BFSI Assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<!-- Footer -->
+<footer class="project-footer">
+    <p class="footer-message">This is my 3rd-year project - a labor of love for BFSI innovation! 🚀</p>
+</footer>
+
+</html>
