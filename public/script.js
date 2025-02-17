@@ -1,7 +1,7 @@
 // OpenAI API Integration
 async function getOpenAIResponse(message) {
     try {
-        const response = await fetch('https://vercel.com/deepak-baghels-projects-2e0af555/ai-powered-bfsi-customer-service-chatbot', {
+        const response = await fetch('https://ai-powered-bfsi-customer-service-chatbot.vercel.app/api/openai', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: message })

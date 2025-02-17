@@ -1,6 +1,12 @@
 const axios = require('axios');
 
 module.exports = async (req, res) => {
+
+    // CORS Headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
     try {
         // User का Message लें
         const userMessage = req.body.message;
